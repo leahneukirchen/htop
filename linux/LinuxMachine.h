@@ -48,6 +48,9 @@ typedef struct CPUData_ {
 
    #ifdef HAVE_SENSORS_SENSORS_H
    double temperature;
+
+   int physicalID;		/* different for each CPU socket */
+   int coreID;			/* same for hyperthreading */
    #endif
 
    bool online;

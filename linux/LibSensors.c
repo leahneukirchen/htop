@@ -157,7 +157,7 @@ static int tempDriverPriority(const sensors_chip_name* chip) {
    return -1;
 }
 
-int LibSensors_countCCDs() {
+int LibSensors_countCCDs(void) {
    int ccds = 0;
 
    int n = 0;
